@@ -35,11 +35,9 @@
         <footer>
           Made by&nbsp;<a href="https://www.zerocho.com" target="_blank">ZeroCho</a>
         </footer>
-        {% block good %}
-        {% endblock %}
+        {% block good %}{% endblock %}
       </div>
-      {% block content %}
-      {% endblock %}
+      {% block content %}{% endblock %}
     </div>
     <script>
       window.onload = () => {
@@ -48,5 +46,7 @@
         }
       };
     </script>
+    {% block script %}{% endblock %}
+
   </body>
 </html>

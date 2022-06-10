@@ -9,6 +9,7 @@ const { isLoggedIn, isNotLoggedIn } = require("./middlewares");
 const router = express.Router();
 
 router.use((req, res, next) => {
+  // html에 user를 자동으로 전송해준다.
   res.locals.user = req.user;
   next();
 });
